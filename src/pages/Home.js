@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 // import { Container } from './styles';
 
@@ -17,18 +18,18 @@ export default class Home extends React.Component {
                         <div class="collapse navbar-collapse" id="navbarResponsive">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="#">Home
-                                    <span class="sr-only">(current)</span>
-                                    </a>
+                                    <Link class="nav-link" to="/home">Home
+                                        <span class="sr-only">(current)</span>
+                                    </Link>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
+                                    <Link class="nav-link" to="/about">About</Link>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Services</a>
+                                    <Link class="nav-link" to="/team">Team</Link>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
+                                    <Link class="nav-link" to="/contact">Contact</Link>
                                 </li>
                             </ul>
                         </div>
