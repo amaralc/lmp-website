@@ -510,8 +510,9 @@ mark {
 }
 
 .img-fluid {
-    max-width: 100%;
-    height: auto
+    max-width: auto;
+    height: 150px;
+    padding-top: 25px;
 }
 
 .img-thumbnail {
@@ -6501,7 +6502,9 @@ a.close.disabled {
 }
 
 .carousel {
-    position: relative
+    position: relative;
+    background: #1E305A;
+    margin-bottom:20px;    
 }
 
 .carousel.pointer-event {
@@ -6518,20 +6521,23 @@ a.close.disabled {
 .carousel-inner::after {
     display: block;
     clear: both;
-    content: ""
+    content: "";    
 }
 
 .carousel-item {
     position: relative;
     display: none;
     float: left;
+    height: 300px; /* Prevent carousel from being distorted if for some reason image doesn't load */
     width: 100%;
     margin-right: -100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transition: -webkit-transform .6s ease-in-out;
     transition: transform .6s ease-in-out;
-    transition: transform .6s ease-in-out, -webkit-transform .6s ease-in-out
+    transition: transform .6s ease-in-out, -webkit-transform .6s ease-in-out;
+    text-align: center;   
+    
 }
 
 @media (prefers-reduced-motion:reduce) {
@@ -6699,7 +6705,7 @@ a.close.disabled {
     padding-top: 20px;
     padding-bottom: 20px;
     color: #fff;
-    text-align: center
+    text-align: left;
 }
 
 @-webkit-keyframes spinner-border {
@@ -7030,7 +7036,7 @@ button.bg-dark:hover {
 }
 
 .d-block {
-    display: block!important
+    display: block!important    
 }
 
 .d-table {
