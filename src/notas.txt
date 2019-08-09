@@ -1,0 +1,34 @@
+motivação
+problematização
+
+levantamento de todas as configurações manuais que são realizadas
+tempo médio para configuração baseado em projeto
+técnicas para automação dessas configurações
+docker
+container
+
+conecta em máquina via sch e roda script cml
+
+ao inves de fazer tudo no terminal, script faz tudo
+possibilidade de verificar alternativas
+verificar alternativas
+kumbernets
+docker composer
+existe para produção, mas verificou possibilidade para ambiente de desenvolvimento também
+
+mapear muito bem essas coisas manuais
+extrair esses tempos
+survay com desenvolvedores
+questionário via google docs com eles
+manutenção de software 
+monitoração de software
+
+
+-- escrever motivação, problematização e metodologia
+necessário para ajudar monitor (orientador) a montar questionário 
+orientador não conhece do problema específico
+
+-- uso de SaaS para desenvolvimento de software
+matriz swot
+fechar tecnologia em quatro esferas
+uma opção: fazer matriz swot de serviços
