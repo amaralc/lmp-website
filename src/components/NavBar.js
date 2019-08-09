@@ -6,7 +6,7 @@ export default function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div className="container">
-        <Link to="/home">
+        <Link to="/">
           <img
             className="navbar-brand"
             src={logo}
@@ -29,7 +29,7 @@ export default function NavBar() {
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item active">
-              <Link className="nav-link" to="/home">
+              <Link className="nav-link" to="/">
                 Home
                 <span className="sr-only">(current)</span>
               </Link>
