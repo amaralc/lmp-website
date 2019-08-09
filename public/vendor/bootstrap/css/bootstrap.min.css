@@ -6528,7 +6528,7 @@ a.close.disabled {
     position: relative;
     display: none;
     float: left;
-    height: 300px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+    height: 447px; /* Prevent carousel from being distorted if for some reason image doesn't load */
     width: 100%;
     margin-right: -100%;
     -webkit-backface-visibility: hidden;
