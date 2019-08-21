@@ -14,7 +14,7 @@ export default function Card(props) {
         <p className="card-text">{props.text}</p>
       </div>
       <div className="card-footer">
-        <a href="#" className="btn btn-primary">
+        <a href="/#" className="btn btn-primary">
           Find Out More!
         </a>
       </div>
