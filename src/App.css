@@ -1,3 +1,15 @@
+/* LMP Pallete Colors: */
+
+:root {
+  --lmp-black: #000000;
+  --lmp-dark-blue: #1e305a;
+  --lmp-medium-blue: #244577;
+  --lmp-light-blue: #3e608e;
+  --lmp-gray: #a09a95;
+  --lmp-yellow: #f4d75d;
+  --lmp-white: #ffffff;
+}
+
 /* .App {
   text-align: left;
 }
