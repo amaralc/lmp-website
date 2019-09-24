@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "../components/Header";
-import PageContent from "../components/PageContent";
 
 // import { Container } from './styles';
 
