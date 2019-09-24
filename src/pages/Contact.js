@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Header from "../components/Header";
 import PageContent from "../components/PageContent";
 
@@ -7,9 +7,8 @@ import PageContent from "../components/PageContent";
 export default class Contact extends React.Component {
   render() {
     return (
-      <div>        
+      <div>
         <Header headerTitle="Contact us" />
-        <PageContent />        
       </div>
     );
   }
