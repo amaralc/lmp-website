@@ -1,11 +1,17 @@
-import React from "react";
+import React, { Component } from "react";
 
-export default function Footer() {
-  return (
-    <footer className="py-5 bg-dark">
-      <div className="container">
-        <p className="m-0 text-center text-white">Copyright &copy; LMP 2019</p>
-      </div>
-    </footer>
-  );
+import { Navbar } from "react-bootstrap";
+
+export class Footer extends Component {
+  render() {
+    return (
+      <Navbar sticky="bottom" bg="dark">
+        <Navbar.Text className="mx-auto text-white">
+          Copyright &copy; LMP 2019
+        </Navbar.Text>
+      </Navbar>
+    );
+  }
 }
+
+export default Footer;
