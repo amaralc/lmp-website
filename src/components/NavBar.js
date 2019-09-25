@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 
-export default class navBar extends Component {
+export default class NavBar extends Component {
   render() {
     return (
       <Navbar
