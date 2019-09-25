@@ -7,8 +7,13 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import App from "./App";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Team from "./pages/Team";
 import Contact from "./pages/Contact";
+import Team from "./pages/Team";
+// import Blog from "./pages/Blog";
+// import Area from "./pages/Area";
+// import Laser from "./pages/Area/Laser";
+// import Grinding from "./pages/Area/Grinding";
+// import Machining from "./pages/Area/Machining";
 import { NoPage } from "./pages/NoPage";
 
 ReactDOM.render(
@@ -19,6 +24,11 @@ ReactDOM.render(
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
         <Route path="/team" component={Team} />
+        {/* <Route path="/blog" component={Blog} /> */}
+        {/* <Route path="/area" component={Area} /> */}
+        {/* <Route path="/area/laser" component={Laser} /> */}
+        {/* <Route path="/area/machining" component={Machining} /> */}
+        {/* <Route path="/area/grinding" component={Grinding} /> */}
         <Route component={NoPage} />
       </Switch>
     </App>
