@@ -1,57 +1,41 @@
-import React from "react";
+import React, { Component } from "react";
 import logo from "../img/logo_horizontal.png";
 import { Link } from "react-router-dom";
+// import "./NavBar.css";
 
-export default function NavBar() {
-  return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div className="container">
-        <Link to="/">
-          <img
-            className="navbar-brand"
-            src={logo}
-            style={{ paddingTop: "3px", height: "30px" }}
-            alt="LMP"
-          />
-        </Link>
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon" />
-        </button>
-        <div className="collapse navbar-collapse" id="navbarResponsive">
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item active">
-              <Link className="nav-link" to="/">
-                Home
-                <span className="sr-only">(current)</span>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/about">
-                About
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/team">
-                Team
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/contact">
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  );
+export default class navBar extends Component {
+  render() {
+    return (
+      <Navbar
+        bg="light"
+        variant="light"
+        expand="lg"
+        sticky="top"
+        style={{ paddingTop: "10px" }}
+      >
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Nav.Link href="/">
+          <Navbar.Brand>
+            <img src={logo} alt="LMP" style={{ height: "30px" }} />
+          </Navbar.Brand>
+        </Nav.Link>
+        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+          <Nav>
+            <Nav.Link href="/">Home</Nav.Link>
+            <NavDropdown title="Areas" id="basic-nav-dropdown">
+              <NavDropdown.Item href="laser">Laser</NavDropdown.Item>
+              <NavDropdown.Item href="machining">Machining</NavDropdown.Item>
+              <NavDropdown.Item href="grinding">Grinding</NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link href="/Team">Team</Nav.Link>
+            <Nav.Link href="/Blog">Blog</Nav.Link>
+            <Nav.Link href="/Contact">Contact</Nav.Link>
+            <Nav.Link href="/About">About</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    );
+  }
 }
