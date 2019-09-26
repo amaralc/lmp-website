@@ -1,14 +1,16 @@
-import React from "react"
-import Card from "./Card"
-import laserImagePath from "../img/ded.png"
-import grindingImagePath from "../img/grinding.png"
-import machiningImagePath from "../img/machining.png"
+import React from "react";
+import CardTemplateImage from "./CardTemplateImage";
+import laserImagePath from "../img/ded.png";
+import grindingImagePath from "../img/grinding.png";
+import machiningImagePath from "../img/machining.png";
+
+import { Row, Col, Container } from "react-bootstrap";
 
 export default function PageContent() {
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-md-8 mb-5">
+    <Container style={{ padding: "0 0.5rem " }}>
+      <Row>
+        <Col md="8" mb="5">
           <h2>What We Do</h2>
           <hr />
           <p>
@@ -23,11 +25,8 @@ export default function PageContent() {
             quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt
             voluptate. Voluptatum.
           </p>
-          <a className="btn btn-primary btn-lg" href="#">
-            Call to Action &raquo;
-          </a>
-        </div>
-        <div className="col-md-4 mb-5">
+        </Col>
+        <Col md="4" mb="5">
           <h2>Contact Us</h2>
           <hr />
           <address>
@@ -47,32 +46,32 @@ export default function PageContent() {
             <abbr title="Email">E:</abbr>
             <a href="mailto:#"> lmp@ufsc.br</a>
           </address>
-        </div>
-      </div>
+        </Col>
+      </Row>
 
-      <div className="row">
-        <div className="col-md-4 mb-5">
-          <Card
+      <Row className="row">
+        <Col md="4" mb="5">
+          <CardTemplateImage
             title="LASER Processing"
             text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus."
             imgPath={laserImagePath}
           />
-        </div>
-        <div className="col-md-4 mb-5">
-          <Card
+        </Col>
+        <Col md="4" mb="5">
+          <CardTemplateImage
             title="Machining"
             text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus."
             imgPath={machiningImagePath}
           />
-        </div>
-        <div className="col-md-4 mb-5">
-          <Card
+        </Col>
+        <Col md="4" mb="5">
+          <CardTemplateImage
             title="Grinding"
             text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus."
             imgPath={grindingImagePath}
           />
-        </div>
-      </div>
-    </div>
-  )
+        </Col>
+      </Row>
+    </Container>
+  );
 }
