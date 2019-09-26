@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import logo from "../img/logo_horizontal.png";
-import { Link } from "react-router-dom";
-// import "./NavBar.css";
 
-import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown, Image } from "react-bootstrap";
 
 export default class NavBar extends Component {
   render() {
@@ -16,9 +14,9 @@ export default class NavBar extends Component {
         style={{ paddingTop: "10px" }}
       >
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Nav.Link href="/">
+        <Nav.Link className="justify-content-start" href="/">
           <Navbar.Brand>
-            <img src={logo} alt="LMP" style={{ height: "30px" }} />
+            <Image src={logo} style={{ height: "30px" }} />
           </Navbar.Brand>
         </Nav.Link>
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
