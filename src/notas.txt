@@ -32,3 +32,9 @@ orientador não conhece do problema específico
 matriz swot
 fechar tecnologia em quatro esferas
 uma opção: fazer matriz swot de serviços
+
+---------------------------------------------------------------
+
+Current Bugs:
+- NavBar Collapse: Icon and logo switching places
+- Footer: over the page content
