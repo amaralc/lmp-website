@@ -2,7 +2,10 @@ import React from "react";
 
 export default function Header(props) {
   return (
-    <header className="bg-primary py-5 mb-5">
+    <header
+      className="py-5 mb-5"
+      style={{ backgroundColor: "var(--lmp-dark-blue)" }}
+    >
       <div className="container h-100">
         <div className="row h-100 align-items-center">
           <div className="col-lg-12">
